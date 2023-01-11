@@ -1,8 +1,9 @@
 import React from 'react';
+import MainView from '../components/MainView';
 
 const Home = () => (
   <div>
-    Home
+    <MainView />
   </div>
 );
 
