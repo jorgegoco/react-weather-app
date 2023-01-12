@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { useSelector } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import getAllLocations from '../utils/mainData';
 
 const MainView = () => {
-  const { lat, lon } = useSelector((state) => state.coord);
+  const [lat, lon] = useSelector((state) => state.coord.coords);
   const data = getAllLocations(lat, lon);
+  const id = useId();
   const listItems = data.map((item) => (
-    <div className="location-list" key={data[5]}>
+    <div className="location-list" key={id}>
       <BsArrowRightCircle />
       <p>
         Location name:&nbsp;

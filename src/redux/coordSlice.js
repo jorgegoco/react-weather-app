@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  lat: 43.467588,
-  lon: -3.812048,
+  coords: [43.467588, -3.812048],
 };
 
 const coordSlice = createSlice({
@@ -10,12 +9,8 @@ const coordSlice = createSlice({
   initialState,
   reducers: {
     input: (state, action) => {
-      const { a, b } = action.payload;
-      return {
-        ...state,
-        a,
-        b,
-      };
+      const temp = state;
+      temp.coords = action.payload;
     },
   },
 });
