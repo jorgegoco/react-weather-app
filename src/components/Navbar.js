@@ -9,7 +9,6 @@ const Navbar = () => (
     <Link to="/">
       <FaChevronLeft className="chevron-icon" />
     </Link>
-    <h1>CHANGE ORIGIN :</h1>
     <Input />
     <div className="navbar-subcontainer">
       <FaMicrophone />

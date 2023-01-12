@@ -7,7 +7,8 @@ const Input = () => {
   const [value, setValue] = React.useState([lat, lon]);
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="input-container">
+      <h1>CHANGE ORIGIN :</h1>
       <input
         type="number"
         placeholder="Latitude..."
