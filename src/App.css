@@ -26,3 +26,64 @@ body {
   display: flex;
   column-gap: 25px;
 }
+
+.locations-list {
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  color: white;
+}
+
+.location-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
+}
+
+.location-list svg {
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+input {
+  padding: 0 0 0 10px;
+  width: 100px;
+  background-color: rgb(255, 81, 146);
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
+}
+
+.input-container h1 {
+  margin-top: 10px;
+}
+
+.input-container button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgb(255, 81, 146);
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
+}
+
+.input-container button:hover {
+  background-color: rgb(186, 72, 110);
+  color: white;
+}
