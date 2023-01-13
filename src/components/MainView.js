@@ -1,4 +1,5 @@
-import React, { useId } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import getAllLocations from '../utils/mainData';
@@ -6,10 +7,11 @@ import getAllLocations from '../utils/mainData';
 const MainView = () => {
   const [lat, lon] = useSelector((state) => state.coord.coords);
   const data = getAllLocations(lat, lon);
-  const id = useId();
   const listItems = data.map((item) => (
-    <div className="location-list" key={id}>
-      <BsArrowRightCircle />
+    <div className="location-list" key={item[1]}>
+      <Link to={`/detail/${item[0]}`}>
+        <BsArrowRightCircle />
+      </Link>
       <p>
         Location name:&nbsp;
         {item[0]}
