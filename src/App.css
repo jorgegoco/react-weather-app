@@ -37,7 +37,6 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 5px;
   column-gap: 5px;
-  color: white;
 }
 
 .location-list {
@@ -53,7 +52,6 @@ body {
   cursor: pointer;
   color: white;
   font-size: 26px;
-  align-self: flex-end;
   margin-right: 15px;
 }
 
@@ -86,4 +84,43 @@ input {
 .input-container button:hover {
   background-color: rgb(186, 72, 110);
   color: white;
+}
+
+.details-container {
+  width: 75%;
+  height: 75vh;
+  margin: auto auto;
+}
+
+.details-container h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.details-container h2 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.details-container p {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  background-color: rgb(186, 72, 110);
+  border: 1px solid black;
+  box-shadow: 5px 10px 8px black;
+  color: white;
+}
+
+th {
+  color: black;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
 }
