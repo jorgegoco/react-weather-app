@@ -58,7 +58,7 @@ body {
 .input-container {
   display: flex;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 11px;
 }
 
 input {
