@@ -51,7 +51,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://jorgegoco.github.io/react-weather-app)
+- [Video Desription](https://drive.google.com/file/d/1ORfoLlJCYqerAnIn58_UgFDa8n64DKGM/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

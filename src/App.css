@@ -58,7 +58,7 @@ body {
 .input-container {
   display: flex;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 11px;
 }
 
 input {
@@ -123,4 +123,47 @@ th,
 td {
   padding: 15px;
   text-align: left;
+}
+
+@media (max-width: 600px) {
+  .locations-list {
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+  }
+
+  .input-container button {
+    width: 100px;
+  }
+
+  .location-list svg {
+    font-size: 22px;
+  }
+
+  .input-container h1 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .details-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 80%;
+    margin: auto;
+  }
 }
