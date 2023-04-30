@@ -15,7 +15,7 @@ const Detail = () => {
       setDet(response.data.list[0].components);
     };
     getDetail();
-  }, [setDet, arr]);
+  }, [setDet]);
   return (
     <div className="details-container">
       <h1>{id}</h1>
@@ -27,23 +27,25 @@ const Detail = () => {
         Longitude:
         {arr[1]}
       </h2>
-      <p>
+      <p style={{ fontWeight: 'bolder' }}>
         Air Quality index levels:
       </p>
       <table>
-        <tr>
-          <th>CO</th>
-          <th>NO</th>
-          <th>NO2</th>
-          <th>O3</th>
-          <th>SO2</th>
-          <th>PM2_5</th>
-          <th>PM10</th>
-          <th>NH3</th>
-        </tr>
-        <tr>
-          {Object.entries(det).map((value) => <td key={value}>{value[1]}</td>)}
-        </tr>
+        <tbody>
+          <tr>
+            <th>CO</th>
+            <th>NO</th>
+            <th>NO2</th>
+            <th>O3</th>
+            <th>SO2</th>
+            <th>PM2_5</th>
+            <th>PM10</th>
+            <th>NH3</th>
+          </tr>
+          <tr>
+            {Object.entries(det).map((value) => <td key={value}>{value[1]}</td>)}
+          </tr>
+        </tbody>
       </table>
     </div>
   );

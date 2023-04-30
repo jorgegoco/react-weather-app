@@ -118,7 +118,9 @@ input {
 }
 
 table {
-  width: 100%;
+  width: 90%;
+  max-width: 90%;
+  border-collapse: collapse;
   background-color: rgb(186, 72, 110);
   border: 1px solid black;
   box-shadow: 5px 10px 8px black;
@@ -137,7 +139,6 @@ td {
 
 @media (max-width: 600px) {
   .locations-list {
-   
     width: 90%;
     margin: auto;
     margin-top: 20px;
@@ -175,8 +176,7 @@ td {
   }
 
   table {
-    width: 80%;
-    margin: auto;
+    overflow-x: auto;
   }
 }
 
