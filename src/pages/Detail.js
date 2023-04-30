@@ -15,7 +15,7 @@ const Detail = () => {
       setDet(response.data.list[0].components);
     };
     getDetail();
-  }, [setDet]);
+  }, [setDet, arr]);
   return (
     <div className="details-container">
       <h1>{id}</h1>
