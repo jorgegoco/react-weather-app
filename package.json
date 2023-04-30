@@ -1,7 +1,7 @@
 {
   "name": "react-weather-app",
   "version": "0.1.0",
-  "homepage": "https://jorgegoco.github.io/",
+  "homepage": "https://jorgegoco.github.io/react-weather-app/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
