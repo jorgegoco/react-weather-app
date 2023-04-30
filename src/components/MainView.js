@@ -14,22 +14,22 @@ const MainView = () => {
       </Link>
       <p>
         Location name:&nbsp;
-        {item[0]}
+        <span className="main-values">{item[0]}</span>
       </p>
       <p>
         Location: latitude&nbsp;
-        {item[1]}
+        <span className="main-values">{item[1]}</span>
         {' '}
         longitude&nbsp;
-        {item[2]}
+        <span className="main-values">{item[2]}</span>
       </p>
       <p>
         Country:&nbsp;
-        {item[3]}
+        <span className="main-values">{item[3]}</span>
       </p>
       <p>
         Population:&nbsp;
-        {item[4]}
+        <span className="main-values">{item[4]}</span>
       </p>
     </div>
   ));
