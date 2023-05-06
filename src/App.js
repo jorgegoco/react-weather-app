@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/react-weather-app" element={<Home />} />
         <Route exact path="/detail/:id" element={<Detail />} />
       </Routes>
     </>
