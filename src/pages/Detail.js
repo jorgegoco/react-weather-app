@@ -11,7 +11,7 @@ const Detail = () => {
 
   React.useEffect(() => {
     const getDetail = async () => {
-      const response = await axios(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${arr[0]}&lon=${arr[1]}&appid=d5069407c8ee26c69337af85c51a84fd`);
+      const response = await axios(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${arr[0]}&lon=${arr[1]}&appid=d5069407c8ee26c69337af85c51a84fd`);
       setDet(response.data.list[0].components);
     };
     getDetail();
